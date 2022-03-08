@@ -15,9 +15,14 @@
 const arguments = process.argv;
 const numbers = arguments.slice(2);
 console.log(numbers);
-let sum = 0;
-for(let i = 0;  i < numbers.length; i++){
-    sum = sum + Number(numbers[i]);
+
+
+const addNumbers = function () {
+    let sum = 0;
+    for (let i = 0; i < numbers.length; i++) {
+        sum = sum + Number(numbers[i]);
+    }
+    console.log("Result!!!!!", sum);
 }
 
-console.log("Result!!!!!", sum);
+addNumbers();
